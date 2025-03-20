@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /glofox/
+
+# Route API requests to api.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/(.*)$ routes/api.php?request=$1 [QSA,L]
