@@ -5,3 +5,4 @@ RewriteBase /glofox/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^api/(.*)$ routes/api.php?request=$1 [QSA,L]
+RewriteRule ^(bookings|classes)$ routes/api.php?request=$1 [QSA,L]
