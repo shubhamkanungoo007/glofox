@@ -1,4 +1,4 @@
-# Glofox-Like System Setup Guide
+# Glofox API Setup Guide
 
 ## Prerequisites
 - Install [XAMPP](https://www.apachefriends.org/) or any local server with PHP and MySQL support.
