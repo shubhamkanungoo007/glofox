@@ -45,26 +45,28 @@ Go to file path: glofox\config\database.php and update the username and passowrd
 Start your XAMPP server and access the API using Postman or a browser:
 
 - **Create a Class**
-  - **URL:** `http://localhost/glofox/classes`
+  - **URL(Windows):** `http://localhost/glofox/classes`
+  - **URL(Linux):** `http://localhost/glofox/routes/api.php?request=classes`
   - **Method:** `POST`
   - **Payload:**
     ```json
     {
       "name": "Yoga Class",
       "start_date": "2025-04-01",
-      "end_date": "2025-04-30"
+      "end_date": "2025-04-30",
+      "capacity": 10
     }
     ```
   - **Response:**
     ```json
     {
-      "success": "Class created successfully.",
-      "class_id": 1
+      "success": "Class created successfully."
     }
     ```
 
 - **Create a Booking**
-  - **URL:** `http://localhost/glofox/bookings`
+  - **URL(Window):** `http://localhost/glofox/bookings`
+  - **URL(Linux):** `http://localhost/glofox/routes/api.php?request=bookings`
   - **Method:** `POST`
   - **Payload:**
     ```json
@@ -77,7 +79,7 @@ Start your XAMPP server and access the API using Postman or a browser:
   - **Response:**
     ```json
     {
-      "success": "Booking created successfully."
+      "success": "Booking successful"
     }
     ```
 
